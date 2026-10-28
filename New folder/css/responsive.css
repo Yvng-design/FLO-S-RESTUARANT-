@@ -1,0 +1,46 @@
+/* Up to 1070px */
+@media (max-width:1070px){
+    html{font-size:60%}
+    .container{padding:0 60px}
+    .images_content{padding:2rem 0}
+    .form_data{width:70%}
+    .footer_grid{grid-template-columns:repeat(2,1fr)}
+}
+
+/* Tablets and phones */
+@media (max-width:900px){
+    html{font-size:55%}
+    .btn{display:block}
+    .navbar nav{flex-direction:column;position:fixed;width:100%;min-height:60vh;top:0;right:-100%;background:#000;align-items:flex-start;justify-content:center;transition:right .6s ease;z-index:200}
+    .navbar nav ul{flex-direction:column}
+    nav.active{right:0}
+    .navbar nav li{margin:2rem 4rem}
+    .navbar nav li a{font-size:1.8rem}
+    .close-btn{position:absolute;top:0;right:0;margin:25px}
+    .menus_items_container{grid-template-columns:repeat(2,1fr)}
+    .customer_cards_container{grid-template-columns:1fr}
+    #showcase .content h2{font-size:5rem}
+    /* iOS and many mobiles ignore fixed backgrounds, so use normal scrolling there */
+    #showcase,#reservation,#deal_today,#static_counter{background-attachment:scroll}
+}
+
+/* 768px */
+@media (max-width:768px){
+    .container{padding:0 30px}
+    .sp_content{grid-template-columns:1fr}
+    .form_data{width:100%;padding:3rem 2rem}
+    .form_data form input{width:100%}
+    .counters{grid-template-columns:1fr}
+    .num{font-size:6rem}
+}
+
+/* 520px */
+@media (max-width:520px){
+    .menus_items_container{grid-template-columns:1fr}
+    .footer_grid{grid-template-columns:1fr}
+    #showcase .content h2{font-size:3.6rem}
+    .images{flex-direction:column;align-items:flex-start}
+    .content_for_img{padding-left:0;padding-top:1rem}
+    .images img{width:100%}
+    .images_content{flex-direction:column;align-items:flex-start}
+}

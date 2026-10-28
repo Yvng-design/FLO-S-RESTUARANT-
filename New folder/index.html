@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flo's Restaurant - authentic Zambian meals, nshima, kapenta, village chicken and more.">
+    <title>Flo's Restaurant</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Righteous&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+    <div class="container">
+        <div class="navbar">
+            <div class="logo"><a href="#home"><img src="images/logo.png" alt="Flo's Restaurant Logo"></a></div>
+            <nav id="nav">
+                <div class="btn"><i class="fas fa-times close-btn"></i></div>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="btn"><i class="fas fa-bars menu-btn"></i></div>
+        </div>
+    </div>
+</header>
+
+<!-- Showcase -->
+<main id="showcase">
+    <div class="container">
+        <div class="content" id="home">
+            <img src="images/logo.png" height="150" alt="Flo's Restaurant Logo">
+            <h2>GOOD FOOD. GREAT COMPANY</h2>
+            <h3>Experience Culinary Delights Like Never Before</h3>
+            <a href="#reservation" class="cta">Book a Table</a>
+        </div>
+    </div>
+</main>
+
+<!-- Special offers -->
+<aside id="sp_offer">
+    <div class="container">
+        <div class="sp_content">
+            <div class="left_side_content">
+                <div class="headings">
+                    <h3>From The Menu</h3>
+                    <h2>SPECIAL OFFERS</h2>
+                </div>
+
+                <div class="images_content reveal">
+                    <div class="images">
+                        <img src="images/special/BEANS.png" height="100" alt="Beans served with nshima">
+                        <div class="content_for_img">
+                            <h4>Beans and Nshima</h4>
+                            <p>Deliciously seasoned beans, perfect for any meal.</p>
+                        </div>
+                    </div>
+                    <div class="price"><p>K25</p></div>
+                </div>
+
+                <div class="images_content reveal">
+                    <div class="images">
+                        <img src="images/special/KAPENTA.jfif" height="100" alt="Kapenta served with nshima">
+                        <div class="content_for_img">
+                            <h4>Kapenta and Nshima</h4>
+                            <p>Fresh kapenta fish served with traditional nshima.</p>
+                        </div>
+                    </div>
+                    <div class="price"><p>K27</p></div>
+                </div>
+
+                <div class="images_content reveal">
+                    <div class="images">
+                        <img src="images/special/VILLAGE.jfif" height="100" alt="Village chicken served with nshima">
+                        <div class="content_for_img">
+                            <h4>Village Chicken and Nshima</h4>
+                            <p>Juicy grilled chicken served with traditional nshima.</p>
+                        </div>
+                    </div>
+                    <div class="price"><p>K39</p></div>
+                </div>
+            </div>
+
+            <div class="right_side_content">
+                <div class="img_right_side">
+                    <img src="images/collage.png" height="500" alt="Collage of restaurant special offers">
+                    <div class="over_img"><a href="#menu"><h2>View Menu</h2></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>
+
+<!-- About -->
+<section id="about">
+    <div class="container">
+        <h3 class="normal_heading-1">Our Story</h3>
+        <h2 class="main_heading-1">ABOUT FLO'S</h2>
+        <p class="about_text reveal">
+            Flo's Restaurant serves honest, home-style Zambian food. Every plate of nshima comes with
+            relishes cooked fresh each day, from kapenta and village chicken to delele and chikanda.
+            Come hungry, bring family and friends, and leave happy.
+        </p>
+    </div>
+</section>
+
+<!-- Reservation -->
+<div id="reservation">
+    <div class="reservation_bg">
+        <div class="container">
+            <div class="form_data">
+                <h3 class="normal_heading">Your Table</h3>
+                <h2 class="main_heading">Reservation Now..</h2>
+                <form id="reservationForm" novalidate>
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="tel" name="phone" placeholder="Contact Number" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                    <input type="number" name="people" placeholder="Number of People" min="1" max="50" required>
+                    <input type="date" name="date" id="bookDate" required>
+                    <input type="time" name="time" required>
+                    <textarea name="message" rows="6" placeholder="Message request"></textarea>
+                    <button type="submit">Book Now</button>
+                    <p id="formMsg" role="status"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Deal today -->
+<div id="deal_today">
+    <div class="container">
+        <h3 class="normal_heading-1">Deal Today</h3>
+        <h2 class="main_heading-1">TODAY'S SPECIAL DISH</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="cards swiper-slide">
+                    <img src="images/DEALS/Chikanda.png" alt="Chikanda served with nshima" height="200">
+                    <h4>Chikanda and Nshima</h4>
+                    <p>Deliciously seasoned Chikanda, perfect for any meal.</p>
+                    <p class="price">K19</p>
+                </div>
+                <div class="cards swiper-slide">
+                    <img src="images/DEALS/Delele.png" alt="Delele with sauce" height="200">
+                    <h4>Delele and Nshima</h4>
+                    <p>Fresh Delele served with traditional nshima.</p>
+                    <p class="price">K17</p>
+                </div>
+                <div class="cards swiper-slide">
+                    <img src="images/DEALS/NSHIMA WITH TBONE.jfif" alt="Nshima with T-Bone" height="200">
+                    <h4>Nshima with T-Bone</h4>
+                    <p>Juicy grilled T-Bone served with traditional nshima.</p>
+                    <p class="price">K49</p>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</div>
+
+<!-- Menu -->
+<section id="menu">
+    <div class="container">
+        <h3 class="normal_heading-1">Food Lover</h3>
+        <h2 class="main_heading-1">RESTAURANT MENU</h2>
+        <div class="food_lover_container">
+            <div class="btn_container">
+                <button type="button" class="btn-cat active_btn" data-id="all">All Dishes</button>
+                <button type="button" class="btn-cat" data-id="Dinner">Dinner</button>
+                <button type="button" class="btn-cat" data-id="Lunch">Lunch</button>
+                <button type="button" class="btn-cat" data-id="Drinks">Drinks</button>
+            </div>
+            <div class="menus_items_container" id="menuContainer"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Customer feedback -->
+<section id="customer_feedback">
+    <div class="container">
+        <h3 class="normal_heading-1">Testimonials</h3>
+        <h2 class="main_heading-1">CUSTOMER FEEDBACK</h2>
+        <div class="customer_cards_container">
+            <div class="customer_cards reveal">
+                <i class="fas fa-quote-left"></i>
+                <p>The village chicken tastes just like my grandmother's. Generous portions and very friendly service.</p>
+                <h4>Mwila K.</h4>
+            </div>
+            <div class="customer_cards reveal">
+                <i class="fas fa-quote-left"></i>
+                <p>Best kapenta in town, and the price is fair. We come here every Friday after work.</p>
+                <h4>Chanda M.</h4>
+            </div>
+            <div class="customer_cards reveal">
+                <i class="fas fa-quote-left"></i>
+                <p>Booked a table for my family's birthday lunch and everything was ready on time. Highly recommended.</p>
+                <h4>Natasha P.</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Counters -->
+<section id="static_counter">
+    <div class="container">
+        <div class="counters">
+            <div class="counter"><div class="num" data-target="27">0</div><h2>Best Dishes</h2></div>
+            <div class="counter"><div class="num" data-target="55">0</div><h2>Our Staff</h2></div>
+            <div class="counter"><div class="num" data-target="291">0</div><h2>Daily Customers</h2></div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="container">
+        <div class="footer_grid">
+            <div class="footer_col">
+                <img src="images/logo.png" alt="Flo's Restaurant Logo" class="footer_logo">
+                <p>Good food. Great company. Authentic Zambian meals made fresh every day.</p>
+                <div class="socials">
+                    <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="footer_col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#reservation">Reservation</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Opening Hours</h4>
+                <ul>
+                    <li>Mon - Fri: 07:00 - 21:00</li>
+                    <li>Saturday: 08:00 - 22:00</li>
+                    <li>Sunday: 10:00 - 18:00</li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><i class="fas fa-location-dot"></i> Your street, Your town, Zambia</li>
+                    <li><i class="fas fa-phone"></i> +260 776 989 765</li>
+                    <li><i class="fas fa-envelope"></i> info@flosrestaurant.com</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <p>&copy; <span id="year"></span> Flo's Restaurant. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+<a href="#home" id="toTop" aria-label="Back to top"><i class="fas fa-arrow-up"></i></a>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
